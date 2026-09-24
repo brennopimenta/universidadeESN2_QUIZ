@@ -1,19 +1,30 @@
 import java.util.Scanner;
 
 public class Questao {
-    String pergunta = "";
-    String opcaoA = "";
-    String opcaoB = "";
-    String opcaoC = "";
-    String opcaoD = "";
-    String opcaoE = "";
-    String correta = "";
+    String pergunta;
+    String opcaoA;
+    String opcaoB;
+    String opcaoC;
+    String opcaoD;
+    String opcaoE;
+    String correta;
+
+    public Questao(String pergunta, String opcaoA, String opcaoB, String opcaoC, String opcaoD, String opcaoE,String correta) {
+        this.pergunta = pergunta;
+        this.opcaoA = opcaoA;
+        this.opcaoB = opcaoB;
+        this.opcaoC = opcaoC;
+        this.opcaoD = opcaoD;
+        this.opcaoE = opcaoE;
+        this.correta = correta;
+    }
 
     public boolean isCorreta(String resposta){
         if(resposta.equalsIgnoreCase(this.correta)){
             System.out.println("Parabéns resposta Correta! - Letra: " + this.correta);
             System.out.println("");
             return true;
+
         } else {
             System.out.println("Resposta Errada!");
             System.out.println("A opção correta é a letra: " + this.correta);
@@ -32,11 +43,12 @@ public class Questao {
         return resp;
     }
 
-    private boolean respostaValida(String resp){
+    boolean respostaValida(String resp){
         if(resp.equalsIgnoreCase("A") || resp.equalsIgnoreCase("B") || resp.equalsIgnoreCase("C") ||
                 resp.equalsIgnoreCase("D") || resp.equalsIgnoreCase("E")){
             return true;
         }
+        
         System.out.println("Resposta inválida! Digite opção A, B, C, D ou E. ");
         System.out.println("");
         return false;
@@ -52,4 +64,6 @@ public class Questao {
         System.out.println(this.opcaoE);
         System.out.println();
     }
+
 }
+

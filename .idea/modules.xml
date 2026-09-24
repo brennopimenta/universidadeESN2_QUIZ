@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/QuizP2.iml" filepath="$PROJECT_DIR$/.idea/QuizP2.iml" />
+=======
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/mikael_theovaldo_silva_carvalho_ESN2_pratica02.iml" filepath="$PROJECT_DIR$/.idea/mikael_theovaldo_silva_carvalho_ESN2_pratica02.iml" />
+=======
       <module fileurl="file://$PROJECT_DIR$/quiz.iml" filepath="$PROJECT_DIR$/quiz.iml" />
+>>>>>>> 263dbdc14cd62307a6847a4fc70bcd3e12655888
+>>>>>>> d178cb15a997d058e7e00b4ac4a71ba7769be3fc
     </modules>
   </component>
 </project>
